@@ -24,7 +24,7 @@ for k, v in paquetes.items():
     paquetes[k]["CAP_ANUAL"] = v["PER"] * usos_anual
     paquetes[k]["COSTO_ANUAL"] = v["MXN"] * usos_anual
 
-MAX_CANT = 5  # límite de combinaciones por paquete
+MAX_CANT = 50  # límite de combinaciones por paquete
 
 def encontrar_combinacion_optima(FU, CP):
     CP_ANUAL = CP * (365 / FU)
